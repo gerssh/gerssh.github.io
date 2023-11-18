@@ -3,7 +3,7 @@
         {
             "id": "ling-han",
             "nombre": "Ling Han",
-            "banner": "../../../src/images/covers/Cover_Ling_Han.png",
+            "banner": "images/covers/Cover_Ling_Han.png",
             "clase": "DPS",
             "elemento": "Escarcha",
             "arma": "Tigre de Alabastro",
