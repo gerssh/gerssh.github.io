@@ -14,8 +14,8 @@ interface cards {
 	{
 		cards.map(card => (
 			<a href={card.url}>
-				<div class="container rounded-xl  bg-[#26242a] hover:bg-[#332D41] text-[#e6e1e5] hover:text-[#CCC2DC] p-5" transition:name={card.title}>
-					<img class="mx-auto" src={card.image}>
+				<div class="container rounded-xl  bg-[#26242a] hover:bg-[#332D41] text-[#e6e1e5] hover:text-[#CCC2DC] p-5">
+					<img class="mx-auto" src={card.image} transition:name={card.title}>
 					<h2 class="text-4xl font-bold">
 						{card.title}
 					</h2>
