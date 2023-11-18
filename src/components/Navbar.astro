@@ -49,8 +49,8 @@ const aStyle ="flex items-center p-2 text-gray-900 rounded-lg text-white group"
                     return <li>
                         <a href={sitio.url} class:list={["py-2 px-3 rounded-full lg:text-xl",
                             {
-                                "text-[#cac4d0] hover:text-[#d0bcff]" : currentPath != sitio.url.slice(1),
-                                "bg-[#d0bcff] text-[#381e72]" : currentPath == sitio.url.slice(1)
+                                "text-[#cac4d0] hover:text-[#d0bcff]" : currentPath != sitio.url,
+                                "bg-[#d0bcff] text-[#381e72]" : currentPath == sitio.url
                             }
                         ]} aria-current="page">{sitio.nombre}</a>
                         </li>
@@ -69,8 +69,8 @@ const aStyle ="flex items-center p-2 text-gray-900 rounded-lg text-white group"
                     return <div class="gap-5">
                             <a href={sitio.url} class:list={["py-2 px-3 rounded-full sm:text-xl hover:text-purple-400",
                             {
-                                "text-[#cac4d0]" : currentPath != sitio.url.slice(1),
-                                "bg-[#d0bcff] text-[#381e72]" : currentPath == sitio.url.slice(1)
+                                "text-[#cac4d0]" : currentPath != sitio.url,
+                                "bg-[#d0bcff] text-[#381e72]" : currentPath == sitio.url
                             }
                         ]} aria-current="page">{sitio.nombre}</a>
                         </div>
