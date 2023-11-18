@@ -10,22 +10,7 @@ interface cards {
 
 ---
 
-<div class="grid invisible md:visible xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 sm:mx-5 md:mx-16 lg:mx-32 my-10 gap-5">
-	{
-		cards.map(card => (
-			<a href={card.url}>
-				<div class="container rounded-xl  bg-[#26242a] hover:bg-[#332D41] text-[#e6e1e5] hover:text-[#CCC2DC] p-5">
-					<img class="mx-auto" src={card.image} transition:name={card.title}>
-					<h2 class="text-4xl font-bold">
-						{card.title}
-					</h2>
-				</div>
-			</a>
-		))
-	}	
-</div>
-
-<div class="grid visible md:invisible vixs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 sm:mx-5 md:mx-16 lg:mx-32 my-10 gap-5">
+<div class="grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 sm:mx-5 md:mx-16 lg:mx-32 my-10 gap-5">
 	{
 		cards.map(card => (
 			<a href={card.url}>
