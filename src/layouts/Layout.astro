@@ -1,0 +1,33 @@
+---
+import { Icon } from 'astro-icon'
+
+import Footer from '../components/Footer.astro';
+import Navbar from '../components/Navbar.astro';
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="../../src/images/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body class="bg-[#1c1b1f] text-[#e6e1e5] md:mt-28">
+		<Navbar/>
+		<main class="mx-5 mt-5">
+			<slot />
+		</main>
+		<Footer/>
+	</body>
+</html>
